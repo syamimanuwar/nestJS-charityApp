@@ -8,7 +8,8 @@ async function bootstrap() {
   await app.listen(CONFIG.apiServer.port);
 
   new Logger('Bootstrap').verbose(
-    "Application is running on: ${await app.getUrl()}",
+    `Application is running on: ${await app.getUrl()}`,
   );
 }
 bootstrap();
+
